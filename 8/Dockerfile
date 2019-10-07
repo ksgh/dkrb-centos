@@ -1,5 +1,5 @@
 FROM scratch
-ADD ./src/centos-8-container.tar.xz /
+ADD centos-8-container.tar.xz /
 
 LABEL org.label-schema.schema-version="1.0" \
     org.label-schema.name="CentOS Base Image" \
