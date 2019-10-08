@@ -1,5 +1,5 @@
 FROM scratch
-ADD centos-7-x86_64-docker.tar.xz /
+ADD 7.7/centos-7-x86_64-docker.tar.xz /
 
 LABEL org.label-schema.schema-version="1.0" \
     org.label-schema.name="CentOS Base Image" \
