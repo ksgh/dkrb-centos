@@ -7,6 +7,15 @@ LABEL org.label-schema.schema-version="1.0" \
     org.label-schema.license="GPLv2" \
     org.label-schema.build-date="20190801"
 
-RUN yum update -y
+ENV LANG=en_US.UTF-8 \
+    LANGUAGE=en_US.UTF-8
 
+RUN yum update -y && \
+    yum install -y \
+        epel-release \
+        bind-utils \
+        which && \
+    yum clean all
+
+ENTRYPOINT []
 CMD ["/bin/bash"]
